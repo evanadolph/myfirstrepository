@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>bar graph</title>
+        
+        <script language = "javascript">
+$('[data-rating] .star').on('click', function() {
+  var selectedCssClass = 'selected';
+  var $this = $(this);
+  $this.siblings('.' + selectedCssClass).removeClass(selectedCssClass);
+  $this
+    .addClass(selectedCssClass)
+    .parent().addClass('is-voted');
+});
+
+
+</script>
+        
+        <style>
+            
+
+.rating-block {
+  padding: 2px 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.rating-block .ratings-type {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+.rating-block .rating-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.rating-block .rating-block-rating {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.rating-block .star {
+  cursor: pointer;
+  stroke: #cc4b37;
+}
+.rating-block .rating-block-rating .star.selected polygon {
+  fill: #cc4b37;
+}
+.rating-block .rating-block-rating.is-voted .star polygon {
+  fill: #cc4b37;
+}
+.rating-block .rating-block-rating.is-voted .star.selected ~ .star polygon {
+  fill: transparent;
+}
+
+        </style>
+        
+        
+    </head>
+    <body>
+    
+        <h1 style="text-align: center;"><span style="color: #0000ff;">Boston</span> <span style="color: #008000;">Sports</span> <span style="color: #ffff00;">are</span> <span style="color: #ff0000;">the</span> Greatest!</h1>
+        <p>
+<table style="height: 282px; border-color: green; margin-left: auto; margin-right: auto;" border="3" width="291">
+<tbody>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Team:</td>
+<td style="width: 153px; height: 36px;">Number of NBA Championships</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;"><span style="color: #008000;"><strong>Boston Celtics</strong></span></td>
+<td style="width: 153px; height: 18px;"><span style="color: #008000;"><strong>17</strong></span></td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Los Angeles Lakers</td>
+<td style="width: 153px; height: 36px;">16</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">Chicago Bulls</td>
+<td style="width: 153px; height: 18px;">6</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Golden State Warriors</td>
+<td style="width: 153px; height: 36px;">5</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">San Antonio Spurs</td>
+<td style="width: 153px; height: 36px;">5</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">Detroit Pistons&nbsp;</td>
+<td style="width: 153px; height: 18px;">3</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">Miami Heat</td>
+<td style="width: 153px; height: 18px;">3</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Philidelphia 76ers</td>
+<td style="width: 153px; height: 36px;">3</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">Houston Rockets</td>
+<td style="width: 153px; height: 18px;">2</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">New York Knicks</td>
+<td style="width: 153px; height: 18px;">2</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">Atlanta Hawks</td>
+<td style="width: 153px; height: 18px;">1</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Cleveland Cavaliers</td>
+<td style="width: 153px; height: 36px;">1</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 118px; height: 18px;">Dallas Mavericks</td>
+<td style="width: 153px; height: 18px;">1</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Milwuakee Bucks</td>
+<td style="width: 153px; height: 36px;">1</td>
+</tr>
+<tr style="height: 36px;">
+<td style="width: 118px; height: 36px;">Oklahoma City Thunder</td>
+<td style="width: 153px; height: 36px;">1</td>
+</tr>
+<tr style="height: 40.5px;">
+<td style="width: 118px; height: 40.5px;">Sacramento Kings</td>
+<td style="width: 153px; height: 40.5px;">1</td>
+</tr>
+<tr style="height: 40.5px;">
+<td style="width: 118px; height: 40.5px;">Washington Wizards</td>
+<td style="width: 153px; height: 40.5px;">
+<p>1</p>
+</td>
+</tr>
+<tr style="height: 40.5px;">
+<td style="width: 118px; height: 40.5px;">Portland Trail Blazers</td>
+<td style="width: 153px; height: 40.5px;">
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table style="height: 226px; border-color: red; margin-left: auto; margin-right: auto;" border="3" width="291">
+<tbody>
+<tr>
+<td style="width: 176px;">Team:</td>
+<td style="width: 176px;">Number of NFL Championships</td>
+</tr>
+<tr>
+<td style="width: 176px;">Pittsburg Steelers</td>
+<td style="width: 176px;">&nbsp;6</td>
+</tr>
+<tr>
+<td style="width: 176px;"><strong><span style="color: #0000ff;">New England Patriots</span></strong></td>
+<td style="width: 176px;"><strong><span style="color: #0000ff;">&nbsp;5</span></strong></td>
+</tr>
+<tr>
+<td style="width: 176px;">Dallas Cowboys&nbsp;</td>
+<td style="width: 176px;">&nbsp;5</td>
+</tr>
+<tr>
+<td style="width: 176px;">San Francisco 49ers&nbsp;</td>
+<td style="width: 176px;">&nbsp;5</td>
+</tr>
+<tr>
+<td style="width: 176px;">Ney York Giants</td>
+<td style="width: 176px;">&nbsp;4</td>
+</tr>
+<tr>
+<td style="width: 176px;">Green Bay Packers&nbsp;</td>
+<td style="width: 176px;">&nbsp;4&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 176px;">Denver Broncos&nbsp;</td>
+<td style="width: 176px;">&nbsp;3</td>
+</tr>
+<tr>
+<td style="width: 176px;">Oakland Raiders</td>
+<td style="width: 176px;">&nbsp;3</td>
+</tr>
+<tr>
+<td style="width: 176px;">Washington Redskins</td>
+<td style="width: 176px;">&nbsp;3</td>
+</tr>
+<tr>
+<td style="width: 176px;">Miami Dolphins&nbsp;</td>
+<td style="width: 176px;">&nbsp;2</td>
+</tr>
+<tr>
+<td style="width: 176px;">Indianapolis Colts&nbsp;</td>
+<td style="width: 176px;">&nbsp;2&nbsp;</td>
+</tr>
+<tr>
+<td style="width: 176px;">Baltimore Ravens</td>
+<td style="width: 176px;">&nbsp;2</td>
+</tr>
+<tr>
+<td style="width: 176px;">New Orleans Saints</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+<tr>
+<td style="width: 176px;">Ney York Jets</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+<tr>
+<td style="width: 176px;">Tampa Bay Bucaneers</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+<tr>
+<td style="width: 176px;">Chicago Bears</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+<tr>
+<td style="width: 176px;">Kansas City Cheifs</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+<tr>
+<td style="width: 176px;">Los Angeles Rams</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+<tr>
+<td style="width: 176px;">Seattle Seahawks</td>
+<td style="width: 176px;">&nbsp;1</td>
+</tr>
+</tbody>
+</table>
+
+<div class="card rating">
+  <div class="card-section">
+    <p class="ratings-card-header">Rate Boston Sports</p>
+    <div class="rating-block">
+      <p class="ratings-type">Competitivity</p>
+      <div class="rating-block-rating" data-rating>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="rating-block">
+      <p class="ratings-type">Fans</p>
+      <div class="rating-block-rating" data-rating>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="rating-block">
+      <p class="ratings-type">Clutchness</p>
+      <div class="rating-block-rating" data-rating>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="rating-block">
+      <p class="ratings-type">Overall</p>
+      <div class="rating-block-rating" data-rating>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="rating-block">
+      <p class="ratings-type">Athletes</p>
+      <div class="rating-block-rating" data-rating>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="37" viewBox="0 0 40 37">
+            <polygon fill="none" points="272 30 260.244 36.18 262.489 23.09 252.979 13.82 266.122 11.91 272 0 277.878 11.91 291.021 13.82 281.511 23.09 283.756 36.18" transform="translate(-252)"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    </body>
+</html>
